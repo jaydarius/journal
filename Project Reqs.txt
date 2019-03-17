@@ -1,0 +1,20 @@
+Routes
+1 - /
+2 - /entries
+3 - /entries/<slug>
+4 - /entries/edit/<slug>
+5 - /entries/delete/<slug>
+6 - /entry
+7 - /details
+
+Details OR Entry
+> Display the following:
+>> title
+>> date
+>> time spent
+>> what you learned
+>> resources to remember
+> Display edit button
+
+/ OR entries
+>
