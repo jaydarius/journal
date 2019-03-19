@@ -18,3 +18,12 @@ Details OR Entry
 
 / OR entries
 >
+
+Model - Posts
+> user
+> title
+> date
+> time
+> notes
+> resources
+

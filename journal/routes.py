@@ -1,10 +1,5 @@
 from flask import (Flask, render_template)
-
-DEBUG = True
-PORT = 300
-HOST = '0.0.0.0'
-
-app = Flask(__name__)
+from journal import app
 
 @app.route('/')
 @app.route('/entries')
@@ -16,10 +11,10 @@ def index():
 def add_entry():
     pass
 
-@app.route('/entry')
+@app.route('/entry/')
 def view_entry():
     return render_template('entry.html')
 
-
-if __name__ == "__main__":
-    app.run(debug=DEBUG, host=HOST, port=PORT)
+@app.route('/entry/edit')
+def edit_entry():
+    return render_template('edit.html')
